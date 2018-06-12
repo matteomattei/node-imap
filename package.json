@@ -1,4 +1,4 @@
-{ "name": "imap",
+{ "name": "qboxmail-imap",
   "version": "0.8.19",
   "author": "Brian White <mscdex@mscdex.net>",
   "description": "An IMAP module for node.js that makes communicating with IMAP servers easy",
