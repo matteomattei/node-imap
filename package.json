@@ -2,6 +2,18 @@
   "name": "qboxmail-imap",
   "version": "0.8.21",
   "author": "Brian White <mscdex@mscdex.net>",
+  "contributor": [
+    {
+      "name": "Matteo Mattei",
+      "email": "matteo.mattei@qboxmail.com",
+      "url": "https://www.qboxmail.com"
+    },
+    {
+      "name": "Filippo Verni",
+      "email": "filippo.verni@qboxmail.com",
+      "url": "https://www.qboxmail.com"
+    }
+  ],
   "description": "An IMAP module for node.js that makes communicating with IMAP servers easy",
   "main": "./lib/Connection",
   "dependencies": {
