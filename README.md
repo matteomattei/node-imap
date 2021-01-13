@@ -399,6 +399,7 @@ Connection Instance Methods
         * **interval** - _integer_ - This is the interval (in milliseconds) at which NOOPs are sent and the interval at which `idleInterval` is checked. **Default:** 10000
         * **idleInterval** - _integer_ - This is the interval (in milliseconds) at which an IDLE command (for servers that support IDLE) is re-sent. **Default:** 300000 (5 mins)
         * **forceNoop** - _boolean_ - Set to `true` to force use of NOOP keepalive on servers also support IDLE. **Default:** false
+    * **id** - _object_ - Set key/value for IMAP ID command to send before authentication. **Default** undefined
     * **debug** - _function_ - If set, the function will be called with one argument, a string containing some debug info **Default:** (no debug output)
 
 * **connect**() - _(void)_ - Attempts to connect and authenticate with the IMAP server.
@@ -503,6 +504,8 @@ Connection Instance Methods
     * **date** - _Date_ - What to use for message arrival date/time. **Default:** (current date/time)
 
   `callback` has 1 parameter: < _Error_ >err.
+
+* **id**(< _object_ >keyValue, < _function_ >callback) - _(void)_ - Execute IMAP ID command with specified parameters.
 
 **All functions below have sequence number-based counterparts that can be accessed by using the 'seq' namespace of the imap connection's instance (e.g. conn.seq.search() returns sequence number(s) instead of UIDs, conn.seq.fetch() fetches by sequence number(s) instead of UIDs, etc):**
 
