@@ -1,7 +1,9 @@
 Description
 ===========
 
-node-imap is an IMAP client module for [node.js](http://nodejs.org/).
+An up-to-date version of [node-imap](https://github.com/mscdex/node-imap) used and maintained by [Qboxmail](https://www.qboxmail.com).
+
+The original project is an IMAP client module for [node.js](http://nodejs.org/).
 
 This module does not perform any magic such as auto-decoding of messages/attachments or parsing of email addresses (node-imap leaves all mail header values as-is).
 
@@ -22,7 +24,7 @@ Requirements
 Installation
 ============
 
-    npm install imap
+    npm install qboxmail-imap
 
 Examples
 ========
@@ -581,6 +583,7 @@ Connection Instance Methods
       * **size** - _boolean_ - Fetch the RFC822 size. **Default:** false
       * **modifiers** - _object_ - Fetch modifiers defined by IMAP extensions. **Default:** (none)
       * **extensions** - _array_ - Fetch custom fields defined by IMAP extensions, e.g. ['X-MAILBOX', 'X-REAL-UID']. **Default:** (none)
+      * **preview** - _boolean_ - Fetch preview if available. **Default:** false
       * **bodies** - _mixed_ - A string or Array of strings containing the body part section to fetch. **Default:** (none) Example sections:
 
           * 'HEADER' - The message header
